@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anne Justine Escritor | Marketing Automation Specialist</title>
-    <!-- Tailwind CSS CDN for instant styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700;800&display=swap');
@@ -13,8 +12,7 @@
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
 
-    <!-- Navigation Header -->
-    <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-900">
+    <header class="sticky top-0 z-40 bg-slate-950/80 backdrop-blur-md border-b border-slate-900">
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
             <span class="text-sm font-bold tracking-wider uppercase text-indigo-400">Anne Justine Escritor</span>
             <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
@@ -28,7 +26,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="about" class="py-20 md:py-32 max-w-6xl mx-auto px-6">
         <div class="max-w-3xl">
             <span class="text-xs font-bold tracking-widest uppercase text-indigo-400 bg-indigo-950/50 border border-indigo-900/50 px-3 py-1 rounded-full">Available for Global Opportunities</span>
@@ -45,7 +42,6 @@
         </div>
     </section>
 
-    <!-- Metrics Dashboard Section -->
     <section id="metrics" class="py-12 border-y border-slate-900 bg-slate-900/20">
         <div class="max-w-6xl mx-auto px-6">
             <p class="text-xs font-bold tracking-widest uppercase text-slate-500 mb-8">Proven Business Impact</p>
@@ -70,13 +66,15 @@
         </div>
     </section>
 
-    <!-- Case Studies Section -->
     <section id="case-studies" class="py-20 max-w-6xl mx-auto px-6">
         <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">Featured Technical Case Studies</h2>
-        <p class="text-sm text-slate-400 mb-12">Deep-dives into active campaign architectures, segmentation logic, and data sync execution.</p>
+        <p class="text-sm text-slate-400 mb-4">Deep-dives into active campaign architectures, segmentation logic, and data sync execution.</p>
+        <p class="text-xs text-indigo-400 bg-indigo-950/40 border border-indigo-900/30 px-3 py-2 rounded-lg inline-flex items-center gap-2 mb-12">
+            <svg class="w-3.5 h-3.5 animate-pulse" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
+            Interactive: Click on any workflow screenshot below to expand to full size.
+        </p>
 
         <div class="space-y-16">
-            <!-- Case Study 1 -->
             <div class="bg-slate-900/40 border border-slate-900 p-8 rounded-2xl hover:border-slate-800 transition">
                 <span class="text-xs font-bold text-indigo-400 uppercase tracking-wider">Campaign Architecture & Lifecycle Marketing</span>
                 <h3 class="text-xl md:text-2xl font-bold text-white mt-2 mb-4">Automated Lifecycle Nurture & Lead Funnel Architecture</h3>
@@ -109,28 +107,24 @@
                     </div>
                 </div>
 
-                <!-- Workflow Images Group for Case Study 1 -->
-                <p class="text-[10px] uppercase tracking-widest font-bold text-slate-500 mb-3 ml-1">Lifecycle Blueprints & Campaign Workflows</p>
+                <p class="text-[10px] uppercase tracking-widest font-bold text-slate-500 mb-3 ml-1">Lifecycle Blueprints & Campaign Workflows (Click to Zoom)</p>
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-                    <!-- Image 1: Lifecycle Diagram -->
                     <div class="border border-slate-900 rounded-xl overflow-hidden bg-slate-950 p-2 flex flex-col justify-between">
-                        <img src="lead-lifecycle-flowchart.PNG" alt="Lead Lifecycle Funnel Blueprint Diagram" class="w-full h-auto max-h-[220px] object-cover rounded-lg bg-slate-900 opacity-80 hover:opacity-100 transition duration-300">
+                        <img src="lead-lifecycle-flowchart.PNG" alt="Lead Lifecycle Funnel Blueprint Diagram" onclick="openLightbox(this)" class="w-full h-auto max-h-[220px] object-cover rounded-lg bg-slate-900 opacity-80 hover:opacity-100 cursor-pointer transition duration-300 transform hover:scale-[1.01]">
                         <div class="p-2 mt-2 border-t border-slate-900/60">
                             <p class="text-xs font-semibold text-slate-300">1. Funnel Blueprint Mapping</p>
                             <p class="text-[11px] text-slate-500 mt-0.5">High-level conditional logic layout defining lead validation paths.</p>
                         </div>
                     </div>
-                    <!-- Image 2: Warm-Up Stream -->
                     <div class="border border-slate-900 rounded-xl overflow-hidden bg-slate-950 p-2 flex flex-col justify-between">
-                        <img src="entry_campaign.PNG" alt="RingEX Warm-Up Entry Batch Workflow" class="w-full h-auto max-h-[220px] object-cover rounded-lg bg-slate-900 opacity-80 hover:opacity-100 transition duration-300">
+                        <img src="entry_campaign.PNG" alt="RingEX Warm-Up Entry Batch Workflow" onclick="openLightbox(this)" class="w-full h-auto max-h-[220px] object-cover rounded-lg bg-slate-900 opacity-80 hover:opacity-100 cursor-pointer transition duration-300 transform hover:scale-[1.01]">
                         <div class="p-2 mt-2 border-t border-slate-900/60">
                             <p class="text-xs font-semibold text-slate-300">2. Warm-Up Setup</p>
                             <p class="text-[11px] text-slate-500 mt-0.5">Batch processing flow routing filtered targets to 12-month tracks.</p>
                         </div>
                     </div>
-                    <!-- Image 3: Acceleration Stream -->
                     <div class="border border-slate-900 rounded-xl overflow-hidden bg-slate-950 p-2 flex flex-col justify-between">
-                        <img src="entry_campaign2.PNG" alt="RingEX Acceleration Entry Workflow" class="w-full h-auto max-h-[220px] object-cover rounded-lg bg-slate-900 opacity-80 hover:opacity-100 transition duration-300">
+                        <img src="entry_campaign2.PNG" alt="RingEX Acceleration Entry Workflow" onclick="openLightbox(this)" class="w-full h-auto max-h-[220px] object-cover rounded-lg bg-slate-900 opacity-80 hover:opacity-100 cursor-pointer transition duration-300 transform hover:scale-[1.01]">
                         <div class="p-2 mt-2 border-t border-slate-900/60">
                             <p class="text-xs font-semibold text-slate-300">3. Acceleration Track</p>
                             <p class="text-[11px] text-slate-500 mt-0.5">Automated programmatic step processing active validation entry flows.</p>
@@ -139,7 +133,6 @@
                 </div>
             </div>
 
-            <!-- Case Study 2 -->
             <div class="bg-slate-900/40 border border-slate-900 p-8 rounded-2xl hover:border-slate-800 transition">
                 <span class="text-xs font-bold text-purple-400 uppercase tracking-wider">Data Operations & Deliverability Hygiene</span>
                 <h3 class="text-xl md:text-2xl font-bold text-white mt-2 mb-4">Lead Operations Optimization: Behavioral Scoring & Data Hygiene</h3>
@@ -172,20 +165,17 @@
                     </div>
                 </div>
 
-                <!-- Workflow Images Group for Case Study 2 -->
-                <p class="text-[10px] uppercase tracking-widest font-bold text-slate-500 mb-3 ml-1">Data Logic & Infrastructure Dashboards</p>
+                <p class="text-[10px] uppercase tracking-widest font-bold text-slate-500 mb-3 ml-1">Data Logic & Infrastructure Dashboards (Click to Zoom)</p>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                    <!-- Image 1: Click Scoring -->
                     <div class="border border-slate-900 rounded-xl overflow-hidden bg-slate-950 p-2 flex flex-col justify-between">
-                        <img src="click_scoring.PNG" alt="Click Scoring Attribution Trigger Workflow" class="w-full h-auto max-h-[260px] object-cover rounded-lg bg-slate-900 opacity-80 hover:opacity-100 transition duration-300">
+                        <img src="click_scoring.PNG" alt="Click Scoring Attribution Trigger Workflow" onclick="openLightbox(this)" class="w-full h-auto max-h-[260px] object-cover rounded-lg bg-slate-900 opacity-80 hover:opacity-100 cursor-pointer transition duration-300 transform hover:scale-[1.01]">
                         <div class="p-2 mt-2 border-t border-slate-900/60">
                             <p class="text-xs font-semibold text-slate-300">1. Click Scoring Attribution Branching</p>
                             <p class="text-[11px] text-slate-500 mt-0.5">Multi-tier choices determining suppression, downgrades, or value additions based on activity logs.</p>
                         </div>
                     </div>
-                    <!-- Image 2: Hard Bounce -->
                     <div class="border border-slate-900 rounded-xl overflow-hidden bg-slate-950 p-2 flex flex-col justify-between">
-                        <img src="hard-bounce.PNG" alt="Permanent Failure Deliverability Workflow" class="w-full h-auto max-h-[260px] object-cover rounded-lg bg-slate-900 opacity-80 hover:opacity-100 transition duration-300">
+                        <img src="hard-bounce.PNG" alt="Permanent Failure Deliverability Workflow" onclick="openLightbox(this)" class="w-full h-auto max-h-[260px] object-cover rounded-lg bg-slate-900 opacity-80 hover:opacity-100 cursor-pointer transition duration-300 transform hover:scale-[1.01]">
                         <div class="p-2 mt-2 border-t border-slate-900/60">
                             <p class="text-xs font-semibold text-slate-300">2. Deliverability Protection Engine</p>
                             <p class="text-[11px] text-slate-500 mt-0.5">Isolates permanent failures, flags invalid fields, and preserves delivery score metrics.</p>
@@ -196,7 +186,6 @@
         </div>
     </section>
 
-    <!-- Technical Stack Matrix Section -->
     <section id="skills" class="py-20 bg-slate-900/10 border-y border-slate-900">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">Technical Capabilities Matrix</h2>
@@ -242,12 +231,10 @@
         </div>
     </section>
 
-    <!-- Professional Experience Timeline -->
     <section id="experience" class="py-20 max-w-6xl mx-auto px-6">
         <h2 class="text-2xl md:text-3xl font-bold text-white mb-12">Professional Timeline</h2>
         
         <div class="relative border-l border-slate-800 ml-4 md:ml-6 space-y-12">
-            <!-- Experience Item 1 -->
             <div class="relative pl-8">
                 <div class="absolute -left-[9px] top-1.5 w-4 h-4 bg-indigo-500 rounded-full border-4 border-slate-950"></div>
                 <span class="text-xs font-semibold text-indigo-400">07/2025 – Present</span>
@@ -258,18 +245,16 @@
                 </p>
             </div>
 
-            <!-- Experience Item 2 -->
             <div class="relative pl-8">
                 <div class="absolute -left-[9px] top-1.5 w-4 h-4 bg-purple-500 rounded-full border-4 border-slate-950"></div>
                 <span class="text-xs font-semibold text-purple-400">04/2023 – 05/2025</span>
                 <h3 class="text-lg font-bold text-white mt-1">Digital Events Marketo Analyst</h3>
-                <p class="text-sm text-slate-400 font-medium">Tech Mahindra - Microsoft — Quezon City</p>
+                <p class="text-sm text-slate-400 font-medium">Tech Mahindra — Microsoft - Quezon City</p>
                 <p class="text-xs text-slate-400 mt-2 max-w-2xl leading-relaxed">
                     Oversaw end-to-end digital event setups via ON24 and Marketo ecosystems, tracking attendee lifecycles, and organizing Microsoft Dynamics tracking architectures.
                 </p>
             </div>
 
-            <!-- Experience Item 3 -->
             <div class="relative pl-8">
                 <div class="absolute -left-[9px] top-1.5 w-4 h-4 bg-pink-500 rounded-full border-4 border-slate-950"></div>
                 <span class="text-xs font-semibold text-pink-400">06/2024 – 08/2024</span>
@@ -280,7 +265,6 @@
                 </p>
             </div>
 
-            <!-- Experience Item 4 -->
             <div class="relative pl-8">
                 <div class="absolute -left-[9px] top-1.5 w-4 h-4 bg-slate-700 rounded-full border-4 border-slate-950"></div>
                 <span class="text-xs font-semibold text-slate-500">11/2021 – 12/2022</span>
@@ -292,7 +276,6 @@
             </div>
         </div>
 
-        <!-- Education Sub-block -->
         <div class="mt-16 pt-8 border-t border-slate-900 max-w-3xl">
             <h3 class="text-sm font-bold tracking-wider uppercase text-slate-400 mb-4">Academic Foundations</h3>
             <div>
@@ -303,7 +286,6 @@
         </div>
     </section>
 
-    <!-- Footer / Contact CTA Section -->
     <footer class="py-20 bg-slate-950 border-t border-slate-900 text-center">
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-3xl font-extrabold text-white mb-4">Let's optimize your marketing architecture.</h2>
@@ -320,6 +302,62 @@
             <p class="text-xs text-slate-700 mt-16">&copy; 2026 Anne Justine Escritor. All rights reserved.</p>
         </div>
     </footer>
+
+    <div id="lightbox" class="fixed inset-0 z-50 hidden bg-slate-950/95 backdrop-blur-md flex items-center justify-center p-4 md:p-10 transition-opacity duration-300 opacity-0">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-slate-400 hover:text-white bg-slate-900/60 hover:bg-slate-800 p-2.5 rounded-full border border-slate-800 transition shadow-xl" aria-label="Close image expansion panel">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <div class="max-w-5xl max-h-[85vh] flex flex-col items-center">
+            <img id="lightbox-img" src="" alt="Expanded architecture preview panel" class="max-w-full max-h-[80vh] object-contain rounded-xl border border-slate-800 shadow-2xl">
+            <p id="lightbox-caption" class="text-xs md:text-sm text-slate-400 mt-4 text-center max-w-xl font-medium tracking-wide"></p>
+        </div>
+    </div>
+
+    <script>
+        function openLightbox(element) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxCaption = document.getElementById('lightbox-caption');
+            
+            lightboxImg.src = element.src;
+            lightboxImg.alt = element.alt;
+            lightboxCaption.textContent = element.alt;
+            
+            lightbox.classList.remove('hidden');
+            // Allow browser layout rendering frame then trigger entry animation fade
+            setTimeout(() => {
+                lightbox.classList.remove('opacity-0');
+            }, 10);
+            
+            document.body.style.overflow = 'hidden'; // Lock main scrolling pipeline
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('opacity-0');
+            
+            // Wait for display transition pipeline duration to finish before isolating display layer
+            setTimeout(() => {
+                lightbox.classList.add('hidden');
+            }, 300);
+            
+            document.body.style.overflow = ''; // Unlock main layout window scrolling
+        }
+
+        // Close when clicking directly on overlay backdrop framework background mask
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+
+        // Close on system physical escape keyboard events trigger
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
 
 </body>
 </html>
